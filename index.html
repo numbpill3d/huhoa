@@ -1,0 +1,87 @@
+<html>
+<style>
+body {
+   font-family: 'Futuristic', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   color: #fff;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #000;
+   color: #fff;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100%;
+}
+
+.nav button {
+   background-color: #000;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.main {
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: calc(100vh - 50px);
+}
+
+.profile, .messages {
+   width: 45%;
+   height: 200px;
+   background-color: #ccc;
+   color: #000;
+}
+
+.footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+   background-color: #000;
+   color: #fff;
+}
+</style>
+<body>
+   <div class="header">
+       <div class="nav">
+           <button>Profile</button>
+           <button>Messages</button>
+           <button>Settings</button>
+           <button>Logout</button>
+       </div>
+   </div>
+   <div class="main">
+       <div class="profile">
+           <img src="https://placehold.it/200x200" alt="Profile Picture">
+           <h2>Username</h2>
+           <p>Short sentence about the user's profile.</p>
+       </div>
+       <div class="messages">
+           <h2>Messages</h2>
+           <p>Short sentence about the latest message from the user.</p>
+           <p>Short sentence about the second latest message from the user.</p>
+           <p>Short sentence about the third latest message from the user.</p>
+       </div>
+   </div>
+   <div class="footer">
+       <p>Copyright 2022</p>
+   </div>
+</body>
+</html>
